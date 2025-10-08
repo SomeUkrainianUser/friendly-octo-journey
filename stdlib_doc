@@ -1,0 +1,13 @@
+print [msg], [len]
+read [buffer], [len]
+exit [exit_code]
+strlen - takes a pointer to a string as an argument into RDI and returns its length into RAX
+atoi - takes an ascii string of numbers as argument into RDI and returns the number into RAX
+isdigit - takes a character into SIL, then returns 1 to RAX
+          if its a number character and 0 if its not
+itoa - takes a number into RDI and writes its ascii representation into buffer
+       thats passed as an argument into RSI
+numlen - takes a number into RDI and returns into RAX 
+         the amount of digits it takes to write it with decimal
+pow - takes number a into RDI and number n into RSI and performs a^n, 
+      returning the result into RAX
